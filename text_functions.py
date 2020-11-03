@@ -89,7 +89,7 @@ def file_statistics(filename:str) -> tuple:
 
 
 def main():
-    print(summary('lukuja.txt'))
+    print(file_statistics('holmes.txt'))
 
 
 if __name__ == '__main__':

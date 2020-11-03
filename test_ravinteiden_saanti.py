@@ -43,7 +43,7 @@ class NutrientTest(unittest.TestCase):
         'METHTYPE': ['S', 'E', 'S', 'S', 'S', 'E', 'S', 'S'],
         'METHIND': ['MI0107', 'MI0107', 'MI0107', 'MI0107', 'MI0107', 'MI0107', 'MI0107', 'MI0107']}
         original_df = pd.DataFrame(original_data)
-        print(f'original df:', original_df, sep='\n')
+        #print(f'original df:', original_df, sep='\n')
 
         transposed_data = {'FOODID': [1, 2],
         'CHOAVL': [99.90, 0], 'CHOCDF': [99.88, 99.0], 'ENERC': [1698.30, 1590.0],
@@ -51,9 +51,9 @@ class NutrientTest(unittest.TestCase):
         transposed_df = pd.DataFrame(transposed_data)
         print(f'transposed df:', transposed_df, sep='\n')
         transposed_df.set_index('FOODID', inplace=True)
-        print(f'transposed df:', transposed_df, sep='\n')
+        #print(f'transposed df:', transposed_df, sep='\n')
 
-        print('returned: ', transpose_component_value(original_df), sep='\n')
+        #print('returned: ', transpose_component_value(original_df), sep='\n')
 
         pdt.assert_frame_equal(transpose_component_value(original_df), transposed_df, check_names=False)
 
