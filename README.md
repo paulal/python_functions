@@ -13,3 +13,7 @@ You will need pandas to run the functions.
 ## text_functions.py
 
 Functions that open files and do something with the contents.
+
+## kuntadata and stock exchange files
+
+Playing with various datasets: data analysis and plotting
